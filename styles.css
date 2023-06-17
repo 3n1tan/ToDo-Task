@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    max-width: 1200px;
 
 }
 
@@ -19,22 +18,39 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    position: absolute;
+}
+
+main {
+    min-height: 80vh;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+    color: purple;
+}
+
+.container {
+    margin-left: 40rem;
+    margin-top: 5rem;
+    width: 800px;
+    position: relative;
+
 }
 
 .btn {
-    margin-left: 15rem;
     font-size: 20px;
     border-radius: 20px;
     border: none;
     padding: 10px;
     width: 90px;
-    color: red;
-    background-color: rgba(255, 0, 0, 0.24);
+    color: white;
+    background-color: orange;
+    position: absolute;
+    right: 30px;
 }
 
 input{
@@ -51,5 +67,89 @@ input{
 }
 
 .addBtn {
+    margin-left: 20px;
+    font-size: 25px;
+    padding: 7px;
+    border-radius: 15px;
+    border: none;
+    height: 50px;
     
 }
+
+footer {
+    margin-left: 43vw;
+    position: relative;
+    bottom: 0;
+    padding-top: 4rem;
+}
+
+/* Mobile Media Query */
+@media (max-width: 767px) {
+    header h1 {
+      margin: 20px 0 0 90px;
+      font-size: 18px;
+    }
+
+    main {
+        min-height: 90vh;
+    }
+  
+    body {
+      background-position: top;
+      position: absolute;
+    }
+  
+    .container {
+      margin-left: 2rem;
+      margin-top: 2rem;
+      width: 250px;
+    }
+  
+    .btn {
+      margin-left: 2rem;
+      font-size: 10px;
+      width: 50px;
+      border-radius: 15px;
+      padding: 5px;
+      position: absolute;
+      right: -40px;
+    }
+  
+    input {
+      margin-left: 5rem;
+      margin-top: 1.5rem;
+      width: 150px;
+      height: 20px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    li {
+        margin-bottom: 15px;
+        font-size: 15px;
+        font-weight: bolder;
+        font-style: italic;
+        color: purple;
+    }
+  
+    .addBtn {
+      margin-left: 10px;
+      margin-top: 0.6rem;
+      font-size: 10px;
+      padding: 5px;
+      height: 20px;
+      position: absolute;
+      top: 55px;
+    }
+  
+    footer {
+      margin-left: 60px;
+      position: relative;
+      padding-top: 25px;
+      width: 300px;
+      font-size: 10px;
+      bottom: 0;
+    
+    }
+  }
+  
